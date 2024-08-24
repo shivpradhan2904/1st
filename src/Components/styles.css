@@ -1,0 +1,78 @@
+.gradient-transition {
+    background: linear-gradient(to right, #0c2f38, #75f3e0);
+    background-size: 200% 100%;
+    animation: gradientShift 5s ease infinite;
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    width: full;  /* Ensure the background covers the entire viewport width */
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+.gradient-transition1 {
+    background: linear-gradient(to right, #095064, #04a088);
+    background-size: 200% 100%;
+    animation: gradientShift 5s ease infinite;
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    width: full;  /* Ensure the background covers the entire viewport width */
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+.gradient-transition2 {
+    background: linear-gradient(to right, #096266, #28ceb5);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    width: full;  /* Ensure the background covers the entire viewport width */
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+.gradient-transition3 {
+    background: linear-gradient(to right, #133740, #006152);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    width: full;  /* Ensure the background covers the entire viewport width */
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  

@@ -1,12 +1,12 @@
 import React from "react";
-import img3 from "../images/st.webp";
+import img3 from "../images/ed.png";
 
 function Education() {
   return (
-    <div id="education" className="w-full h-screen bg-[#0b2a31] bg-cover bg-center backdrop-blur-lg transition-transform duration-500">
+    <div id="education-section" className="w-full h-screen gradient-transition1 bg-cover bg-center backdrop-blur-lg transition-transform duration-500">
           <h2
             className="text-9xl font-extrabold text-transparent pt-[4rem] mr-[7rem] flex justify-end animate-jump"
-            style={{ WebkitTextStroke: "1px #78a4ad" }}
+            style={{ WebkitTextStroke: "1px #15221f" }}
           >
             {Array.from("2018 - 2025").map((char, index) => (
               <span
@@ -32,7 +32,7 @@ function Education() {
                   </span>
                 ))}
               </h1>
-              <div className="h-2 rounded-xl w-80 bg-[#1a735e] mt-4 mb-8 animate-border-slide-in"></div>
+              <div className="h-2 rounded-xl w-80 bg-[#1fa485] mt-4 mb-8 animate-border-slide-in"></div>
 
               <p className="text-lg leading-relaxed text-gray-300 inline-block animate-slide-in-paragraph">
                 {Array.from(
@@ -49,24 +49,18 @@ function Education() {
               </p>
 
               <div className="mt-8">
-                <div className="mb-6">
-                  <h3 className="text-2xl  font-bold">
-                    Higher Secondary School
-                  </h3>
-                  <p className="text-lg text-gray-400">
-                    KSUB college | 2018-2020
+                
+                <div className="mb-10">
+                  <h3 className="text-2xl text-[#152b26] font-bold">Bachelor Degree</h3>
+                  <p className="text-lg text-[#a9dfdf]">
+                    Berhampur University || 2020-2023
                   </p>
                 </div>
-                <div className="mb-6">
-                  <h3 className="text-2xl  font-bold">Bachelor Degree</h3>
-                  <p className="text-lg text-gray-400">
-                    Berhampur University | Zoology Honours | 2020-2023
-                  </p>
-                </div>
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold">Master Degree</h3>
-                  <p className="text-lg text-gray-400">
-                    IMIT | Master In Computer Application | 2023-2025
+
+                <div className="mb-5">
+                  <h3 className="text-2xl text-[#152b26] font-bold">Master Degree</h3>
+                  <p className="text-lg text-[#a9dfdf]">
+                    Institute Of Management And Infromation Technology || 2023-2025
                   </p>
                 </div>
               </div>
@@ -74,7 +68,7 @@ function Education() {
 
             <div className="flex justify-center items-center">
               <img
-                className="w-[30rem] h-[30rem] rounded-lg"
+                className="w-[35rem] h-[35rem] mt-10 rounded-lg"
                 src={img3}
                 alt="sorry"
               />

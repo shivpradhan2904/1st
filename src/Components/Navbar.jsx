@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React from "react";
+import { Link } from "react-scroll";
 import img2 from "../images/ic.png";
 
 function Navbar() {
@@ -11,58 +11,58 @@ function Navbar() {
             to="about"
             smooth={true}
             duration={500}
-            className="cursor-pointer font-bold shadow-black shadow-lg lg:text-lg text-black bg-[#13574e] rounded-xl px-3 transition-all duration-300"
+            className="cursor-pointer font-bold shadow-black shadow-lg lg:text-lg text-[#bdbdbd] bg-[#000000] rounded-xl px-3 transition-all duration-300 hover:bg-[#1d6d68] hover:text-[#e1f7f0] transform"
           >
-            My Portfolio
+            Portfolio
           </Link>
         </div>
-        <ul className="flex space-x-10 justify-center items-center mr-10">
-          <li>
+        <ul className="flex space-x-10 justify-center items-center mr-10 backdrop-blur-[50px] bg-[#104f4f] p-4 rounded-full">
+          <li className="relative overflow-hidden">
             <Link
-              to="education"
+              to="education-section"
               smooth={true}
               duration={500}
-              className="cursor-pointer text-base lg:text-lg hover:text-[19px] hover:shadow-lg hover:shadow-black hover:text-[#42c3b1] transition-transform transform hover:scale-110 duration-300"
+              className="cursor-pointer text-base lg:text-lg hover:text-white transition-transform transform hover:scale-105 duration-300 ease-in-out"
             >
               Education
             </Link>
           </li>
-          <li>
+          <li className="relative overflow-hidden">
             <Link
               to="about-section"
               smooth={true}
               duration={500}
-              className="cursor-pointer text-base lg:text-lg hover:shadow-lg hover:shadow-black hover:text-[19px] hover:text-[#42c3b1] transition-transform transform hover:scale-110 duration-300"
+              className="cursor-pointer text-base lg:text-lg hover:text-[#ffffff] transition-transform transform hover:scale-105 duration-300 ease-in-out"
             >
               About Me
             </Link>
           </li>
-          
-          <li>
+          <li className="relative overflow-hidden">
             <Link
-              to="project"
+              to="project-section"
               smooth={true}
               duration={500}
-              className="cursor-pointer text-base lg:text-lg hover:shadow-lg hover:shadow-black hover:text-[19px] hover:text-[#42c3b1] transition-transform transform hover:scale-110 duration-300"
+              className="cursor-pointer text-base lg:text-lg hover:text-[#ffffff] transition-transform transform hover:scale-105 duration-300 ease-in-out"
             >
               Project
             </Link>
           </li>
-          <li>
+          <li className="relative overflow-hidden">
             <Link
-              to="contact"
+              to="contact-section"
               smooth={true}
               duration={500}
-              className="cursor-pointer text-base lg:text-lg hover:shadow-lg hover:shadow-black hover:text-[19px] hover:text-[#42c3b1] transition-transform transform hover:scale-110 duration-300"
+              className="cursor-pointer text-base lg:text-lg hover:text-[#ffffff] transition-transform transform hover:scale-105 duration-300 ease-in-out"
             >
               Contact Us
             </Link>
           </li>
         </ul>
+
         <div className="flex justify-end">
           <img
             src={img2}
-            className="h-10 w-10 transition-transform duration-500 transform hover:rotate-360"
+            className="h-10 w-10 transition-transform duration-500 transform hover:rotate-360 hover:scale-105"
             alt="Icon"
           />
         </div>
