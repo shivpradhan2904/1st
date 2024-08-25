@@ -4,13 +4,20 @@ import img1 from "../images/email.png";
 import img3 from "../images/instagram.png";
 import img4 from "../images/git.png";
 import img5 from "../images/linkedin (1).png";
-import './styles.css';
+import "./styles.css";
 
 function Contact() {
+  const speakUtterance = () => {
+    const inputText = document.querySelector("input").value;
+    const utterance = new SpeechSynthesisUtterance(inputText);
+    speechSynthesis.speak(utterance);
+  };
   const openWhatsApp = () => {
     const phoneNumber = "+919078738600"; // Replace with your phone number
     const message = "Hello, I would like to connect with you."; // Pre-filled message
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(url, "_blank");
   };
 
@@ -19,23 +26,63 @@ function Contact() {
     const email = "sibapradhan2904@gmail.com"; // Replace with your email
     const subject = "Inquiry"; // Pre-filled subject
     const body = "Hello, I would like to get more information."; // Pre-filled body
-    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
     window.open(mailtoUrl, "_blank");
   };
 
   return (
     <div id="contact-section" className="gradient-transition h-screen w-full">
-      <section className="gradient-transition text-[#75f3e0] py-28 flex flex-col items-center justify-between min-h-screen relative">
-        <div className="w-full gradient-transition shadow-lg p-8 rounded-lg">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold">GET IN TOUCH</h2>
-            <p className="text-[#4ae9b2] mt-2 text-lg" style={{fontFamily: '"Pacifico ", cursive', fontWeight: 400 }}>Let's Work Together</p>
+      <section className="gradient-transition text-[#75f3e0] py-8 md:py-28 flex flex-col items-center justify-between min-h-screen relative">
+        <div className="w-full gradient-transition shadow-lg pt-10 md:p-8 rounded-lg">
+          <div className="text-center mb-3 md:mb-12">
+            <h2 className="text-4xl font-bold">
+              {Array.from("GET").map((char, index) => (
+                <span
+                  key={index}
+                  className="inline-block md:hover:animate-jump md:hover:translate-y-[-16px] transition-transform duration-300"
+                >
+                  {char}
+                </span>
+              ))}
+              &nbsp;
+              {Array.from("IN").map((char, index) => (
+                <span
+                  key={index}
+                  className="inline-block md:hover:animate-jump md:hover:translate-y-[-16px] transition-transform duration-300"
+                >
+                  {char}
+                </span>
+              ))}
+              &nbsp;
+              {Array.from("TOUCH").map((char, index) => (
+                <span
+                  key={index}
+                  className="inline-block md:hover:animate-jump md:hover:translate-y-[-16px] transition-transform duration-300"
+                >
+                  {char}
+                </span>
+              ))}
+            </h2>
+            <p
+              className="text-[#4ae9b2] mt-2 text-lg tracking-wide"
+              style={{ fontFamily: '"Pacifico", cursive', fontWeight: 400 }}
+            >
+              Let's Work Together
+            </p>
           </div>
 
-          <div className="container mx-auto flex flex-wrap justify-center gap-8 text-center"style={{fontFamily: '"Pacifico ", cursive', fontWeight: 400 }}>
+          <div
+            className="container mx-auto flex flex-wrap justify-center md:gap-8 text-center"
+            style={{ fontFamily: '"Pacifico ", cursive', fontWeight: 400 }}
+          >
             {/* Phone Button */}
             <div className="p-6 rounded-lg transition duration-300 group">
-              <button onClick={openWhatsApp} className="transition duration-500 ease-in-out transform group-hover:scale-110">
+              <button
+                onClick={openWhatsApp}
+                className="transition duration-500 ease-in-out transform group-hover:scale-110"
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={img}
@@ -44,12 +91,15 @@ function Contact() {
                   />
                 </div>
               </button>
-              <h3 className="text-xl font-semibold text-white">Whatsapp</h3>
+              <h3 className="md:text-xl text-sm font-semibold text-white">Whatsapp</h3>
             </div>
 
             {/* Email Button */}
             <div className="p-6 rounded-lg transition duration-300 group">
-              <button onClick={sendEmail} className="transition duration-500 ease-in-out transform group-hover:scale-110">
+              <button
+                onClick={sendEmail}
+                className="transition duration-500 ease-in-out transform group-hover:scale-110"
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={img1}
@@ -58,12 +108,15 @@ function Contact() {
                   />
                 </div>
               </button>
-              <h3 className="text-xl font-semibold text-white">Email</h3>
+              <h3 className="md:text-xl text-sm font-semibold text-white">Email</h3>
             </div>
 
             {/* GitHub Button */}
             <div className="p-6 rounded-lg transition duration-300 group">
-              <a href="https://github.com/shivpradhan2904" className="transition duration-500 ease-in-out transform group-hover:scale-110">
+              <a
+                href="https://github.com/shivpradhan2904"
+                className="transition duration-500 ease-in-out transform group-hover:scale-110"
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={img4}
@@ -72,12 +125,15 @@ function Contact() {
                   />
                 </div>
               </a>
-              <h3 className="text-xl font-semibold text-white">GitHub</h3>
+              <h3 className="md:text-xl text-sm font-semibold text-white">GitHub</h3>
             </div>
 
             {/* LinkedIn Button */}
             <div className="p-6 rounded-lg transition duration-300 group">
-              <a href="https://www.linkedin.com/in/siba-pradhan-2606a9289/" className="transition duration-500 ease-in-out transform group-hover:scale-110">
+              <a
+                href="https://www.linkedin.com/in/siba-pradhan-2606a9289/"
+                className="transition duration-500 ease-in-out transform group-hover:scale-110"
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={img5}
@@ -86,12 +142,15 @@ function Contact() {
                   />
                 </div>
               </a>
-              <h3 className="text-xl font-semibold text-white">LinkedIn</h3>
+              <h3 className="md:text-xl text-sm font-semibold text-white">LinkedIn</h3>
             </div>
 
             {/* Instagram Button */}
             <div className="p-6 rounded-lg transition duration-300 group">
-              <a href="https://www.instagram.com/shiv___2904/" className="transition duration-500 ease-in-out transform group-hover:scale-110">
+              <a
+                href="https://www.instagram.com/shiv___2904/"
+                className="transition duration-500 ease-in-out transform group-hover:scale-110"
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={img3}
@@ -100,37 +159,54 @@ function Contact() {
                   />
                 </div>
               </a>
-              <h3 className="text-xl font-semibold text-white">Instagram</h3>
+              <h3 className="md:text-xl text-sm font-semibold text-white">Instagram</h3>
             </div>
           </div>
           <div className="flex justify-center mt-10">
-            <input
-              type="text"
-              className="h-14 pl-3 bg-[#144d5b] text-white w-[60rem] rounded-lg"
-              placeholder="Enter Your Review"
-            />
+            <div className="relative w-[20rem] md:w-[60rem]">
+              <input
+                type="text"
+                className="md:h-14 h-9 pl-2 pr-16 md:pl-3 md:pr-32 bg-[#144d5b] text-white w-full rounded-lg"
+                placeholder="Enter Your Review"
+              />
+              <button
+                className="absolute right-0 top-0 md:w-32 w-20 md:h-14 h-9 rounded-lg bg-[#268e9b] font-bold text-lg"
+                onClick={speakUtterance}
+              >
+                Speak
+              </button>
+            </div>
           </div>
         </div>
 
         {/* Footer */}
         <div className="w-full absolute bottom-0 bg-[#0c1111]">
-          <div className="container mx-auto flex flex-wrap justify-around text-white py-8">
+          <div className="container mx-auto grid grid-cols-4 md:grid-cols-4 gap-4 text-white py-2  md:py-8">
             {/* Community */}
             <div>
-              <h3 className="text-lg font-bold mb-2">Community</h3>
-              <ul className="space-y-3">
+              <h3 className="md:text-lg text-sm font-bold mb-2">Community</h3>
+              <ul className="md:space-y-3 ">
                 <li>
-                  <a href="https://www.youtube.com/" className="hover:text-[#87f0da]">
+                  <a
+                    href="https://www.youtube.com/"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
+                  >
                     Youtube
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/shivpradhan2904" className="hover:text-[#87f0da]">
+                  <a
+                    href="https://github.com/shivpradhan2904"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
+                  >
                     Github
                   </a>
                 </li>
                 <li>
-                  <button onClick={openWhatsApp} className="hover:text-[#87f0da]">
+                  <button
+                    onClick={openWhatsApp}
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
+                  >
                     Whatsapp
                   </button>
                 </li>
@@ -139,20 +215,26 @@ function Contact() {
 
             {/* Social Media */}
             <div>
-              <h3 className="text-lg font-bold mb-2">Social Media</h3>
-              <ul className="space-y-3">
+              <h3 className="md:text-lg text-sm font-bold mb-2">Social</h3>
+              <ul className="md:space-y-3 ">
                 <li>
-                  <a href="https://www.instagram.com/shiv___2904/" className="hover:text-[#87f0da]">
+                  <a
+                    href="https://www.instagram.com/shiv___2904/"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
+                  >
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-[#87f0da]">
+                  <a href="/" className="hover:text-[#87f0da] text-xs md:text-[1rem]">
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/siba-pradhan-2606a9289/" className="hover:text-[#87f0da]">
+                  <a
+                    href="https://www.linkedin.com/in/siba-pradhan-2606a9289/"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
+                  >
                     LinkedIn
                   </a>
                 </li>
@@ -161,54 +243,55 @@ function Contact() {
 
             {/* About */}
             <div>
-              <h3 className="text-lg font-bold mb-2">About</h3>
-              <ul className="space-y-3">
+              <h3 className="md:text-lg text-sm font-bold mb-2">About</h3>
+              <ul className="md:space-y-3 ">
                 <li>
-                  <a href="/" className="hover:text-[#87f0da]">
+                  <a href="/" className="hover:text-[#87f0da] text-xs md:text-[1rem]">
                     Become Sponsor
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-[#87f0da]">
+                  <a href="/" className="hover:text-[#87f0da] text-xs md:text-[1rem]">
                     Learning about me
                   </a>
                 </li>
                 <li>
                   <a
                     href="mailto:sibapradhan2904@gmail.com"
-                    className="hover:text-[#87f0da]"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
                   >
-                    sibapradhan2904@gmail.com
+                    Email
                   </a>
                 </li>
               </ul>
             </div>
 
+            {/* Explore */}
             <div>
-              <h3 className="text-lg font-bold mb-2">Explore</h3>
-              <ul className="space-y-3">
+              <h3 className="md:text-lg text-sm font-bold mb-2">Explore</h3>
+              <ul className="md:space-y-3 ">
                 <li>
-                  <a href="/" className="hover:text-[#87f0da]">
+                  <a href="/" className="hover:text-[#87f0da] text-xs md:text-[1rem]">
                     Developer
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-[#87f0da]">
+                  <a href="/" className="hover:text-[#87f0da] text-xs md:text-[1rem]">
                     PartnerShip
                   </a>
                 </li>
                 <li>
                   <a
                     href="mailto:sibapradhan2904@gmail.com"
-                    className="hover:text-[#87f0da]"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
                   >
-                    Affilities Program
+                    Affiliates
                   </a>
                 </li>
                 <li>
                   <a
                     href="mailto:sibapradhan2904@gmail.com"
-                    className="hover:text-[#87f0da]"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
                   >
                     Blog
                   </a>
@@ -216,7 +299,7 @@ function Contact() {
                 <li>
                   <a
                     href="mailto:sibapradhan2904@gmail.com"
-                    className="hover:text-[#87f0da]"
+                    className="hover:text-[#87f0da] text-xs md:text-[1rem]"
                   >
                     Apps
                   </a>
@@ -227,7 +310,7 @@ function Contact() {
 
           {/* Ensure the copyright text sticks to the bottom of the page */}
           <div className="w-full absolute bottom-0">
-            <p className="text-center text-[13px] text-white">
+            <p className="text-center md:text-[13px] text-[8px] text-white">
               Copyright ©2024 by Shiv Pradhan | All Rights Reserved.
             </p>
           </div>
