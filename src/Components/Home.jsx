@@ -78,7 +78,7 @@ function Home() {
             <h1 className="text-2xl font-mono inline-block text-[#00FFFF] md:text-6xl sm:text-4xl xs:text-3xl">
               Hello.... I'm Shiv <br /> a passionate
             </h1>
-            <h1 className="text-2xl font-semibold md:w-[35rem] w-[19rem]  text-[#28a9a9] mt-2 md:text-5xl sm:text-3xl xs:text-2xl">
+            <h1 className="text-2xl font-semibold md:w-[35rem] w-[19rem]  text-[#28a9a9] mt-1 md:mt-2 md:text-5xl sm:text-3xl xs:text-2xl">
               <span>{currentTitle}</span>
               <span
                 className={`cursor ${isBlinking ? "opacity-100" : "opacity-0"}`}
@@ -86,7 +86,7 @@ function Home() {
                 |
               </span>
             </h1>
-            <p className="text-[14px] md:mt-5 mt-3 w-[15rem] pr-5 md:pr-0 sm:[17rem] md:text-xl md:w-[40rem] sm:text-base sm:w-[20rem] xs:text-sm xs:w-[15rem]">
+            <p className="text-[14px] md:mt-5 mt-1 w-[15rem] pr-5 md:pr-0 sm:[17rem] md:text-xl md:w-[40rem] sm:text-base sm:w-[20rem] xs:text-sm xs:w-[15rem]">
               Aspiring Web & MERN Stack Developer with a strong passion for
               building innovative and impactful web applications. I stay updated
               with the latest technologies to ensure my skills remain sharp and
@@ -94,7 +94,7 @@ function Home() {
               in designing and implementing databases using MongoDB, ensuring
               data integrity and optimized performance in CRUD operations...
             </p>
-            <div className="flex mt-3 md:mt-12 md:grid xl:justify-start">
+            <div className="flex mt-2 md:mt-12 md:grid xl:justify-start">
               <a
                 href={img}
                 download="my-image.png"
@@ -105,7 +105,7 @@ function Home() {
             </div>
           </div>
           <div
-            className="w-[10rem] h-[10rem] ml-[5rem] md:ml-0 mt-3 shadow-2xl shadow-black mr-10 bg-no-repeat bg-cover bg-center rounded-full md:w-[30rem] md:h-[30rem] sm:w-[20rem] sm:h-[20rem] xs:w-[15rem] xs:h-[15rem]"
+            className="w-[10rem] h-[10rem] ml-[5rem] md:ml-0 mt-2 shadow-2xl shadow-black mr-10 bg-no-repeat bg-cover bg-center rounded-full md:w-[30rem] md:h-[30rem] sm:w-[20rem] sm:h-[20rem] xs:w-[15rem] xs:h-[15rem]"
             style={{ backgroundImage: `url(${img1})` }}
           ></div>
         </div>
