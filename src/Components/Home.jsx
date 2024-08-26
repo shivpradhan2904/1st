@@ -73,7 +73,7 @@ function Home() {
       id="about-section"
         className="relative h-screen bg-cover gradient-transition3 bg-center backdrop-blur-lg">
       <div className="absolute flex flex-col gradient-transition3 h-full w-full">
-        <div className="md:relative md:flex-grow md:grid lg:flex grid grid-cols-1 md:mx-6 ml-[1.1rem] items-center md:mb-9 justify-between mt-[2rem] md:mt-[5rem] py-4 md:py-0 mx-4 pr-1 rounded-3xl bg-[#011b21] hover:scale-[1.02] hover:shadow-xl hover:shadow-[#203632] transition-all duration-300 ease-in-out">
+        <div className="md:relative md:flex-grow md:grid lg:flex grid grid-cols-1 md:mx-6 ml-[1.1rem] items-center md:mb-9 justify-between mt-[3.3rem] md:mt-[5rem] py-4 md:py-0 mx-4 pr-1 rounded-3xl bg-[#011b21] hover:scale-[1.02] hover:shadow-xl hover:shadow-[#203632] transition-all duration-300 ease-in-out">
           <div className="text-white ml-7 md:ml-10">
             <h1 className="text-2xl font-mono inline-block text-[#00FFFF] md:text-6xl sm:text-4xl xs:text-3xl">
               Hello.... I'm Shiv <br /> a passionate
@@ -94,7 +94,7 @@ function Home() {
               in designing and implementing databases using MongoDB, ensuring
               data integrity and optimized performance in CRUD operations...
             </p>
-            <div className="flex mt-2 md:mt-12 md:grid xl:justify-start">
+            <div className="flex mt-2 md:mt-12 md:grid justify-center xl:justify-start">
               <a
                 href={img}
                 download="my-image.png"
@@ -105,7 +105,7 @@ function Home() {
             </div>
           </div>
           <div
-            className="w-[10rem] h-[10rem] ml-[5rem] md:ml-0 mt-2 shadow-2xl shadow-black mr-10 bg-no-repeat bg-cover bg-center rounded-full md:w-[30rem] md:h-[30rem] sm:w-[20rem] sm:h-[20rem] xs:w-[15rem] xs:h-[15rem]"
+            className="w-[10rem] h-[10rem] ml-[3rem] md:ml-0 mt-2 shadow-2xl shadow-black mr-10 bg-no-repeat bg-cover bg-center rounded-full md:w-[30rem] md:h-[30rem] sm:w-[20rem] sm:h-[20rem] xs:w-[15rem] xs:h-[15rem]"
             style={{ backgroundImage: `url(${img1})` }}
           ></div>
         </div>
