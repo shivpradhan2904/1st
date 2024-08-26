@@ -8,7 +8,7 @@ function Education() {
       className="w-full h-screen gradient-transition1 bg-cover bg-center backdrop-blur-lg transition-transform duration-500"
     >
       <h2
-        className="text-6xl md:text-9xl font-extrabold text-transparent pt-[2rem] md:pt-[4rem] mr-[1rem] md:mr-[7rem] flex justify-center md:justify-end animate-jump"
+        className="text-6xl md:text-9xl font-extrabold text-transparent pt-[4rem] md:pt-[4rem] mr-[1rem] md:mr-[7rem] flex justify-center md:justify-end animate-jump"
         style={{ WebkitTextStroke: "1px #15221f" }}
       >
         {Array.from("2018 - 2025").map((char, index) => (
@@ -37,7 +37,7 @@ function Education() {
               </span>
             ))}
           </h1>
-          <div className="h-1 md:h-2 rounded-xl w-40 md:w-80 bg-[#1fa485] mt-2 md:mt-4 mb-4 md:mb-8 animate-border-slide-in"></div>
+          <div className="h-1 md:h-2 rounded-xl w-30 md:w-80 bg-[#1fa485] mt-2 md:mt-4 mb-4 md:mb-8 animate-border-slide-in"></div>
 
           <p className="text-sm md:text-lg leading-relaxed text-gray-300 inline-block animate-slide-in-paragraph">
             {Array.from(
