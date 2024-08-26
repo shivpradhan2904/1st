@@ -63,7 +63,7 @@ function Navbar() {
         <div className="flex justify-end">
           <img
             src={img2}
-            className="h-6 w-6 ml-2 md:h-10 md:w-10 sm:h-8 sm:w-68 "
+            className="h-6 w-6 md:h-10 md:w-10 sm:h-8 sm:w-68 "
             alt="Icon"
           />
         </div>
