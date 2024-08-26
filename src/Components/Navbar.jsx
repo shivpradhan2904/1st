@@ -5,7 +5,7 @@ import img2 from "../images/ic.png";
 function Navbar() {
   return (
     <div>
-      <nav className="fixed top-1 ml-2 md:ml-0 md:top-4 sm:top-3  left-1/2 transform -translate-x-[12rem] sm:-translate-x-[16rem] md:-translate-x-1/2 w-[95%] h-[2.5rem] bg-[#1a8173]/30 backdrop-blur-xl rounded-full flex justify-between items-center text-lg text-[#A3E4D7] px-3 shadow-lg z-50 md:w-[90%] md:h-14 md:px-6 sm:w-[95%] sm:h-12 sm:px-4 sm:text-base xs:w-full xs:h-10 xs:px-2 xs:text-sm xs:rounded-none xs:top-0 xs:left-0 xs:right-0 xs:bg-[#1a8173]/30 xs:backdrop-blur-none space-x-3 custom-translate">
+      <nav className="fixed top-1 ml-2 md:ml-0 md:top-4 sm:top-3 left-0 right-0 mx-auto w-[90%] h-[2.5rem] bg-[#1a8173]/30 backdrop-blur-xl rounded-full flex justify-between items-center text-lg text-[#A3E4D7] px-3 shadow-lg z-50 md:w-[90%] md:h-14 md:px-6 sm:w-[95%] sm:h-12 sm:px-4 sm:text-base xs:w-full xs:h-10 xs:px-2 xs:text-sm xs:rounded-none xs:top-0 xs:bg-[#1a8173]/30 xs:backdrop-blur-none space-x-3 custom-translate">
         <div className="flex justify-start xs:rounded-none">
           <Link
             to="about"
