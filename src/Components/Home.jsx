@@ -73,12 +73,12 @@ function Home() {
       id="about-section"
         className="relative h-screen bg-cover gradient-transition3 bg-center backdrop-blur-lg">
       <div className="absolute flex flex-col gradient-transition3 h-full w-full">
-        <div className="md:relative md:flex-grow md:grid lg:flex grid grid-cols-1 md:mx-6 ml-[1.1rem] items-center md:mb-9 justify-between mt-[3.3rem] md:mt-[5rem] py-4 md:py-0 mx-4 pr-1 rounded-3xl bg-[#011b21] hover:scale-[1.02] hover:shadow-xl hover:shadow-[#203632] transition-all duration-300 ease-in-out">
+        <div className="md:relative md:flex-grow md:grid lg:flex grid grid-cols-1 md:mx-6 ml-[1.1rem] items-center md:mb-9 justify-between mt-[3rem] md:mt-[5rem] py-6 md:py-0 mx-4 pr-1 rounded-3xl bg-[#011b21] hover:scale-[1.02] hover:shadow-xl hover:shadow-[#203632] transition-all duration-300 ease-in-out">
           <div className="text-white ml-7 md:ml-10">
-            <h1 className="text-2xl font-mono inline-block text-[#00FFFF] md:text-6xl sm:text-4xl xs:text-3xl">
+            <h1 className="text-xl font-mono inline-block text-[#00FFFF] md:text-6xl sm:text-4xl xs:text-3xl">
               Hello.... I'm Shiv <br /> a passionate
             </h1>
-            <h1 className="text-2xl font-semibold md:w-[35rem] w-[19rem]  text-[#28a9a9] mt-1 md:mt-2 md:text-5xl sm:text-3xl xs:text-2xl">
+            <h1 className="text-xl font-semibold md:w-[35rem] w-[19rem]  text-[#28a9a9] mt-1 md:mt-2 md:text-5xl sm:text-3xl xs:text-2xl">
               <span>{currentTitle}</span>
               <span
                 className={`cursor ${isBlinking ? "opacity-100" : "opacity-0"}`}
