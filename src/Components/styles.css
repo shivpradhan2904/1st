@@ -75,14 +75,4 @@
     }
   }
   
-  /* In your global CSS file or within a <style> tag */
-@media (min-width: 414px) and (max-width: 896px) {
-  .custom-translate {
-    transform: translateX(-12.5rem); /* Adjust this value as needed */
-  }
-}
-@media (min-width: 390px) and (max-width: 844px) {
-  .custom-translate {
-    transform: translateX(-11.6rem); /* Adjust this value as needed */
-  }
-}
+ 
