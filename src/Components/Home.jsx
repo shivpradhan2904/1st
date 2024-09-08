@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import img1 from "../images/my.jpg";
-import img from "../images/re.jpg";
+import img from "../images/resume.pdf";
 
 const titles = [
   "Frontend Developer",
