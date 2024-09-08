@@ -162,7 +162,7 @@ function Contact() {
               <h3 className="md:text-xl text-sm font-semibold text-white">Instagram</h3>
             </div>
           </div>
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center my-10">
             <div className="relative w-[20rem] md:w-[60rem]">
               <input
                 type="text"
@@ -181,7 +181,7 @@ function Contact() {
 
         {/* Footer */}
         <div className="w-full absolute bottom-0 bg-[#0c1111]">
-          <div className="container mx-auto grid grid-cols-4 md:grid-cols-4 gap-4 text-white py-2  md:py-8">
+          <div className="container mx-auto grid grid-cols-4 md:grid-cols-4 gap-4 text-white py-2  md:py-4">
             {/* Community */}
             <div>
               <h3 className="md:text-lg text-sm font-bold mb-2">Community</h3>
